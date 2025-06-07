@@ -6,13 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		776BB5AB2DCCAB8300C4B228 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5AA2DCCAB8300C4B228 /* Lottie */; };
+		776BB5B32DCCAD5100C4B228 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5B22DCCAD5100C4B228 /* FirebaseAnalytics */; };
+		776BB5B52DCCAD5100C4B228 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5B42DCCAD5100C4B228 /* FirebaseAuth */; };
+		776BB5B72DCCAD5100C4B228 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5B62DCCAD5100C4B228 /* FirebaseCore */; };
+		776BB5B92DCCAD5100C4B228 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5B82DCCAD5100C4B228 /* FirebaseCrashlytics */; };
+		776BB5BB2DCCAD5100C4B228 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5BA2DCCAD5100C4B228 /* FirebaseMessaging */; };
+		776BB5BD2DCCAD5100C4B228 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5BC2DCCAD5100C4B228 /* FirebaseRemoteConfig */; };
+		776BB5C72DCCB05300C4B228 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5C62DCCB05300C4B228 /* GRDB */; };
+		779EB2EF2DCB7AFD0005E03F /* ConCurrencyCore in Frameworks */ = {isa = PBXBuildFile; productRef = 779EB2EE2DCB7AFD0005E03F /* ConCurrencyCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		779EB2A42DCB72A40005E03F /* HalfActive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfActive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		779EB2B72DCB72CA0005E03F /* Exceptions for "HalfActive" folder in "HalfActive" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SPM/ConCurrencyCore,
+			);
+			target = 779EB2A32DCB72A40005E03F /* HalfActive */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		779EB2A62DCB72A40005E03F /* HalfActive */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				779EB2B72DCB72CA0005E03F /* Exceptions for "HalfActive" folder in "HalfActive" target */,
+			);
 			path = HalfActive;
 			sourceTree = "<group>";
 		};
@@ -23,6 +48,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776BB5C72DCCB05300C4B228 /* GRDB in Frameworks */,
+				776BB5BB2DCCAD5100C4B228 /* FirebaseMessaging in Frameworks */,
+				776BB5B52DCCAD5100C4B228 /* FirebaseAuth in Frameworks */,
+				779EB2EF2DCB7AFD0005E03F /* ConCurrencyCore in Frameworks */,
+				776BB5B72DCCAD5100C4B228 /* FirebaseCore in Frameworks */,
+				776BB5B92DCCAD5100C4B228 /* FirebaseCrashlytics in Frameworks */,
+				776BB5B32DCCAD5100C4B228 /* FirebaseAnalytics in Frameworks */,
+				776BB5AB2DCCAB8300C4B228 /* Lottie in Frameworks */,
+				776BB5BD2DCCAD5100C4B228 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				779EB2A62DCB72A40005E03F /* HalfActive */,
+				779EB2ED2DCB7AFD0005E03F /* Frameworks */,
 				779EB2A52DCB72A40005E03F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +78,13 @@
 				779EB2A42DCB72A40005E03F /* HalfActive.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		779EB2ED2DCB7AFD0005E03F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +107,15 @@
 			);
 			name = HalfActive;
 			packageProductDependencies = (
+				779EB2EE2DCB7AFD0005E03F /* ConCurrencyCore */,
+				776BB5AA2DCCAB8300C4B228 /* Lottie */,
+				776BB5B22DCCAD5100C4B228 /* FirebaseAnalytics */,
+				776BB5B42DCCAD5100C4B228 /* FirebaseAuth */,
+				776BB5B62DCCAD5100C4B228 /* FirebaseCore */,
+				776BB5B82DCCAD5100C4B228 /* FirebaseCrashlytics */,
+				776BB5BA2DCCAD5100C4B228 /* FirebaseMessaging */,
+				776BB5BC2DCCAD5100C4B228 /* FirebaseRemoteConfig */,
+				776BB5C62DCCB05300C4B228 /* GRDB */,
 			);
 			productName = HalfActive;
 			productReference = 779EB2A42DCB72A40005E03F /* HalfActive.app */;
@@ -94,6 +145,11 @@
 			);
 			mainGroup = 779EB29B2DCB72A40005E03F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				776BB5A92DCCAB8300C4B228 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				776BB5C52DCCB05300C4B228 /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 779EB2A52DCB72A40005E03F /* Products */;
 			projectDirPath = "";
@@ -258,8 +314,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -267,6 +323,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HalfPolygon.HalfActive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,8 +347,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +356,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HalfPolygon.HalfActive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,6 +388,80 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		776BB5A92DCCAB8300C4B228 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+		776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		776BB5C52DCCB05300C4B228 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = exactVersion;
+				version = 7.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		776BB5AA2DCCAB8300C4B228 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BB5A92DCCAB8300C4B228 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		776BB5B22DCCAD5100C4B228 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		776BB5B42DCCAD5100C4B228 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		776BB5B62DCCAD5100C4B228 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		776BB5B82DCCAD5100C4B228 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		776BB5BA2DCCAD5100C4B228 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		776BB5BC2DCCAD5100C4B228 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		776BB5C62DCCB05300C4B228 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BB5C52DCCB05300C4B228 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		779EB2EE2DCB7AFD0005E03F /* ConCurrencyCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ConCurrencyCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 779EB29C2DCB72A40005E03F /* Project object */;
 }
