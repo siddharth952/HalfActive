@@ -32,6 +32,7 @@ struct HumanSkeletonView: View {
                 Spacer()
                 Text("Human Skeleton")
                     .font(.largeTitle.bold())
+                    .foregroundStyle(.white)
                     .padding(.top)
                 
                 SceneViewRepresentable(selectedPart: .constant(nil), zoomedPartName: .constant(nil))
