@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772E17FD2DFD7426008D8DF1 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 772E17FC2DFD7426008D8DF1 /* Swinject */; };
 		776BB5AB2DCCAB8300C4B228 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5AA2DCCAB8300C4B228 /* Lottie */; };
 		776BB5B32DCCAD5100C4B228 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5B22DCCAD5100C4B228 /* FirebaseAnalytics */; };
 		776BB5B52DCCAD5100C4B228 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 776BB5B42DCCAD5100C4B228 /* FirebaseAuth */; };
@@ -33,6 +34,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		778049E22DFEB687008B2750 /* HalfActiveTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HalfActiveTests;
+			sourceTree = "<group>";
+		};
 		779EB2A62DCB72A40005E03F /* HalfActive */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -49,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776BB5C72DCCB05300C4B228 /* GRDB in Frameworks */,
+				772E17FD2DFD7426008D8DF1 /* Swinject in Frameworks */,
 				776BB5BB2DCCAD5100C4B228 /* FirebaseMessaging in Frameworks */,
 				776BB5B52DCCAD5100C4B228 /* FirebaseAuth in Frameworks */,
 				779EB2EF2DCB7AFD0005E03F /* ConCurrencyCore in Frameworks */,
@@ -83,6 +90,7 @@
 		779EB2ED2DCB7AFD0005E03F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				778049E22DFEB687008B2750 /* HalfActiveTests */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				778049E22DFEB687008B2750 /* HalfActiveTests */,
 				779EB2A62DCB72A40005E03F /* HalfActive */,
 			);
 			name = HalfActive;
@@ -116,6 +125,7 @@
 				776BB5BA2DCCAD5100C4B228 /* FirebaseMessaging */,
 				776BB5BC2DCCAD5100C4B228 /* FirebaseRemoteConfig */,
 				776BB5C62DCCB05300C4B228 /* GRDB */,
+				772E17FC2DFD7426008D8DF1 /* Swinject */,
 			);
 			productName = HalfActive;
 			productReference = 779EB2A42DCB72A40005E03F /* HalfActive.app */;
@@ -149,6 +159,7 @@
 				776BB5A92DCCAB8300C4B228 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				776BB5B12DCCAD5100C4B228 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				776BB5C52DCCB05300C4B228 /* XCRemoteSwiftPackageReference "GRDB" */,
+				772E17FB2DFD7426008D8DF1 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 779EB2A52DCB72A40005E03F /* Products */;
@@ -390,6 +401,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		772E17FB2DFD7426008D8DF1 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
 		776BB5A92DCCAB8300C4B228 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
@@ -417,6 +436,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		772E17FC2DFD7426008D8DF1 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 772E17FB2DFD7426008D8DF1 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
 		776BB5AA2DCCAB8300C4B228 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 776BB5A92DCCAB8300C4B228 /* XCRemoteSwiftPackageReference "lottie-spm" */;

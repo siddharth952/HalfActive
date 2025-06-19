@@ -1,0 +1,11 @@
+{
+  "Simulator Target Bundle": "HalfPolygon.HalfActive",
+  "aps": {
+    "alert": {
+      "title": "Transfer Update",
+      "body": "Your Transfer has been downloaded"
+    },
+    "sound": "bubble-sound.mp3"
+  },
+   "playSound": true
+}
