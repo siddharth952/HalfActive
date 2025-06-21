@@ -15,8 +15,9 @@ final class NotificationViewModel {
     }
     
     func handleNoti(userInfo: [AnyHashable: Any]) {
+        
         if let playSound = userInfo["playSound"] as? Bool, playSound {
-            audioService.playSound(named: "test_sound_file", volume: 0.4, loop: false)
+            audioService.playSound(named: "bubble-sound", volume: 0.9, loop: false)
         }
     }
 }
